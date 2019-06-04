@@ -59,21 +59,21 @@ public with sharing class InlineAcountHerachy_TestUtilities{
   		List<Account> auxList = new List<Account>();
   		
   		for( Integer i = 1; i <= accountToCreate; i++ ){
-  			Account accAux 				= new Account();
-  			accAux.Name 				= this.createRandomWord();
+  			Account accAux 			= new Account();
+  			accAux.Name 			= this.createRandomWord();
   			accAux.ShippingStreet 		= '1 Main St.';
-  			accAux.ShippingState		= 'VA';
-  			accAux.ShippingPostalCode	= '12345';
-  			accAux.ShippingCountry		= 'USA';
-  			accAux.ShippingCity			= 'Anytown';
-  			accAux.Description			= 'This is a test account';
+  			accAux.ShippingPostalCode	= '24141';
+  			accAux.ShippingCountry		= 'United States';
+			accAux.ShippingState		= 'Virginia';
+  			accAux.ShippingCity		= 'Anytown';
+  			accAux.Description		= 'This is a test account';
   			accAux.BillingStreet		= '1 Main St.';
-  			accAux.BillingState			= 'VA';
-  			accAux.BillingPostalCode	= '12345';
-  			accAux.BillingCountry 		= 'USA';
-  			accAux.BillingCity			= 'Anytown';
+  			accAux.BillingPostalCode	= '24141';
+  			accAux.BillingCountry 		= 'United States';
+			accAux.BillingState		= 'Virginia';
+  			accAux.BillingCity		= 'Anytown';
   			accAux.AnnualRevenue		= 10000;
-  			accAux.ParentId				= null;
+  			accAux.ParentId			= null;
 			auxList.add( accAux );
   		}
   		
